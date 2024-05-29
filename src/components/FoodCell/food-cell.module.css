@@ -1,68 +1,68 @@
 .food {
-  background: linear-gradient(to left, rgb(236, 137, 8), rgb(253, 232, 37));
-  height: 90%;
-  width: 90%;
-  border-radius: 1.5em;
-  animation: fruit-pulse 3s infinite;
+	background: linear-gradient(to left, rgb(236, 137, 8), rgb(253, 232, 37));
+	height: 90%;
+	width: 90%;
+	border-radius: 1.5em;
+	animation: fruit-pulse 3s infinite;
 }
 
 .food::before {
-  content: "";
-  background: rgb(7, 199, 65);
-  position: relative;
-  top: -20%;
-  left: 40%;
-  height: 1em;
-  width: 1em;
-  display: block;
-  border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+	content: '';
+	background: rgb(7, 199, 65);
+	position: relative;
+	top: -20%;
+	left: 40%;
+	height: 1em;
+	width: 1em;
+	display: block;
+	border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
 }
 
 .food::after {
-  content: "Eat me";
-  position: relative;
-  bottom: 2%;
-  left: 9%;
-  height: 1em;
-  width: 1em;
+	content: 'Eat me';
+	position: relative;
+	bottom: 2%;
+	left: 9%;
+	height: 1em;
+	width: 1em;
 
-  font-style: italic;
-  font-size: 0.9em;
+	font-style: italic;
+	font-size: 0.9em;
 
-  animation: color-change 3s infinite;
-  animation-direction: alternate;
-  animation-delay: 0ms;
+	animation: color-change 3s infinite;
+	animation-direction: alternate;
+	animation-delay: 0ms;
 }
 
 @keyframes color-change {
-  0% {
-    color: rgb(0, 102, 255);
-  }
-  20% {
-    color: blue;
-  }
-  40% {
-    color: green;
-  }
-  40% {
-    color: rgb(247, 0, 255);
-  }
-  60% {
-    color: red;
-  }
-  100% {
-    color: rgb(170, 25, 199);
-  }
+	0% {
+		color: rgb(0, 102, 255);
+	}
+	20% {
+		color: blue;
+	}
+	40% {
+		color: green;
+	}
+	40% {
+		color: rgb(247, 0, 255);
+	}
+	60% {
+		color: red;
+	}
+	100% {
+		color: rgb(170, 25, 199);
+	}
 }
 
 @keyframes fruit-pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
 }

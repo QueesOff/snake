@@ -10,7 +10,7 @@
   height: 100%;
   box-shadow: inherit;
   border-radius: inherit;
-  background-color: rgb(0, 110, 255);
+  background-color: rgba(255, 244, 216, 1);
 }
 
 .snake .head {
@@ -18,10 +18,10 @@
   height: 100%;
   box-shadow: inherit;
   border-radius: inherit;
-  background-color: hsl(34, 94%, 55%);
+  background-color: rgba(255, 244, 216, 1);
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(255, 255, 255);
+  color: rgba(255, 244, 216, 1);
   font-size: 1.5em;
 }

@@ -1,17 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 html,
 body {
-  margin: 0;
-  height: 100%;
-  width: 100%;
+	margin: 0;
+	height: 100%;
+	width: 100%;
 }
 
 #root {
-  height: 100%;
-  width: 100%;
-  background-color: #242424;
-  font-size: 0.9vw;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(14, 35, 56, 1);
+	font-size: 0.9vw;
 }
 
 * {
-  box-sizing: border-box;
+	font-family: 'Press Start 2P', system-ui;
+	font-weight: 400;
+	font-style: normal;
+	box-sizing: border-box;
+}
+
+.controller {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.icon-button {
+	width: 60px;
+	height: 60px;
+}
+
+.controls {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.controls button {
+	background: none; /* Убираем фон */
+	color: inherit; /* Цвет текста наследуется от родительского элемента */
+	border: none; /* Убираем рамку */
+	padding: 0; /* Убираем внутренние отступы */
+	margin: 0; /* Убираем внешние отступы */
+	font: inherit; /* Наследуем шрифт от родительского элемента */
+	cursor: pointer; /* Сохраняем курсор в виде указателя */
+	outline: inherit; /* Управление контуром при фокусировке */
+}
+
+.controls button {
+	margin-top: -3px;
+} /* Top */
+
+.controls div button:nth-child(1) {
+	margin-right: -1px;
+}
+
+.controls div button:nth-child(3) {
+	margin-left: -1px;
 }

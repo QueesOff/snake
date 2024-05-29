@@ -1,8 +1,8 @@
 import { SnakeState } from "../redux/game-slice";
 import { createGrid, generateFood, position, positionID } from "../utils";
 
-const NUM_ROWS = 15;
-const NUM_COLS = 15;
+const NUM_ROWS = 17;
+const NUM_COLS = 17;
 
 const ANIMATION_DELAY = 160;
 
